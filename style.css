@@ -223,25 +223,25 @@ location p{
 }
 
 
-.destination-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240yuipx, auto));
-    grid-gap: 1rem;
-    align-items: center;
+.destination-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
     margin-top: 5rem;
-}
+  }
 .col-content{
     position: relative;
 }
-.col-content img{
-    width: 30%;
+.col-content img {
+    border-radius: 15px;
+    width: 350px;
     height: 300px;
     object-fit: cover;
-    border-radius: 15px;
     filter: brightness(80%);
-    transition: all .3s cubic-bezier(.445,05,.55,.95);
+    transition: all 0.3s cubic-bezier(0.445, 05, 0.55, 0.95);
     will-change: filter;
-}
+  }
 .col-content h5{
     position: absolute;
     font-size: 22px;
